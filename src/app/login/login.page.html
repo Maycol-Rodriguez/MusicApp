@@ -1,21 +1,19 @@
-<ion-header>
-  <ion-toolbar color="medium">
-    <ion-title class="ion-text-center">Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content color="medium" class="ion-padding" >
-  <form [formGroup]="loginForm" (ngSubmit)="loginUser(loginForm.value)" >
+<ion-content class="ion-padding">
+  <div class="login-logo">
+    <img
+      src="https://logos-world.net/wp-content/uploads/2020/09/Spotify-Logo.png"
+      width="200"
+      alt="Logo"
+    />
+  </div>
+  <form [formGroup]="loginForm" (ngSubmit)="loginUser(loginForm.value)">
+    <!--!  -->
     <ion-item>
-      <ion-input
-        label="Email"
-        labelPlacement="floating"
-        placeholder="name@example.com"
-        formControlName="email"
-      ></ion-input>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input formControlName="email" type="email"></ion-input>
     </ion-item>
 
-    <div class="validation-erros">
+    <div class="validation-erros ion-text-center">
       <ng-container *ngFor="let validation of validationMessages.email">
         <div
           *ngIf="(
@@ -27,17 +25,15 @@
         </div>
       </ng-container>
     </div>
+    <!--!  -->
 
-    <ion-item>
-      <ion-input
-        label="Password"
-        labelPlacement="floating"
-        placeholder="*********"
-        type="password"
-        formControlName="password"
-      ></ion-input>
+    <!--!  -->
+    <ion-item class="ion-margin-top">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input formControlName="password" type="password"></ion-input>
     </ion-item>
-    <div class="validation-erros">
+
+    <div class="validation-erros ion-text-center">
       <ng-container *ngFor="let validation of validationMessages.password">
         <div
           *ngIf="(
@@ -49,18 +45,16 @@
         </div>
       </ng-container>
     </div>
-<!-- 1. Mejorar el estilo para mostrar los mensajes de error
-2. Darle estilo a nuestra pagina de login -->
 
-    <div style="width: 100%; display: flex; justify-content: center">
-      <ion-button
-        [disabled]="!loginForm.valid"
-        color="primary"
-        type="submit"
-        shape="round"
-        class="flex ion-margin-top ion-align-items-center ion-justify-content-center"
-        >Ingresar</ion-button
-      >
-    </div>
+    <!--!  -->
+
+    <ion-button
+      [disabled]="!loginForm.valid"
+      type="submit"
+      expand="block"
+      shape="round"
+      class="flex ion-margin-top ion-align-items-center ion-justify-content-center"
+      >Login</ion-button
+    >
   </form>
 </ion-content>
