@@ -5,6 +5,9 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+import { AuthenticationService } from '../services/authentication.service';
+import { NavController } from '@ionic/angular';
+import { Storage } from '@ionic/storage-angular';
 
 @Component({
   selector: 'app-login',
@@ -12,6 +15,7 @@ import {
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+  errorMesagge: string = '';
   loginForm: FormGroup;
   validationMessages = {
     email: [
@@ -26,7 +30,12 @@ export class LoginPage implements OnInit {
       },
     ],
   };
-  constructor(private formBuilder: FormBuilder) {
+  constructor(
+    private formBuilder: FormBuilder,
+    private auth: AuthenticationService,
+    private navCtrl: NavController,
+    private storage: Storage
+  ) {
     this.loginForm = this.formBuilder.group({
       email: new FormControl(
         '',
@@ -43,4 +52,14 @@ export class LoginPage implements OnInit {
     });
   }
   ngOnInit() {}
+  async loginUser(credentials: any) {
+    try {
+      await this.auth.loginUser(credentials);
+      this.storage.set('isUserLoggedIn', true);
+      this.navCtrl.navigateRoot('/home');
+    } catch (error: any) {
+      this.errorMesagge = error;
+      console.log(error);
+    }
+  }
 }
