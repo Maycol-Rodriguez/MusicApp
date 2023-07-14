@@ -53,8 +53,18 @@
       type="submit"
       expand="block"
       shape="round"
-      class="flex ion-margin-top ion-align-items-center ion-justify-content-center"
+      class="ion-margin-top"
       >Login</ion-button
     >
   </form>
+  <ion-footer>
+    <ion-button
+      expand="block"
+      shape="round"
+      class="ion-margin-top"
+      routerLink="/register"
+      (click)="goToRegister()"
+      >Registrate</ion-button
+    >
+  </ion-footer>
 </ion-content>
