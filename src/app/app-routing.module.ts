@@ -6,7 +6,8 @@ import { LoginGuard } from './guards/login.guard';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'menu/home',
+    // redirectTo: 'menu/home',
+    redirectTo: 'login',
     pathMatch: 'full',
   },
   {
@@ -14,6 +15,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./intro/intro.module').then((m) => m.IntroPageModule),
   },
+
   {
     path: 'login',
     loadChildren: () =>
@@ -39,7 +41,8 @@ const routes: Routes = [
   },
   {
     path: 'settings',
-    loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
+    loadChildren: () =>
+      import('./settings/settings.module').then((m) => m.SettingsPageModule),
   },
 ];
 

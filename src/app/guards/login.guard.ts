@@ -16,6 +16,7 @@ export class LoginGuard implements CanActivate {
       return true;
     } else {
       this.navCtrl.navigateRoot('/login');
+      console.log('isUSerLoggedIn', isUserLoggedIn);
       return false;
     }
   }

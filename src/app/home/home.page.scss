@@ -30,6 +30,8 @@ swiper-slide {
   line-height: 26px;
 }
 
+
+
 #container p {
   font-size: 16px;
   line-height: 22px;
@@ -39,6 +41,10 @@ swiper-slide {
 
 #container a {
   text-decoration: none;
+}
+ion-content {
+  --ion-background-color: rgb(46, 47, 51);
+  --ion-color-step-550: #3d3d3d;
 }
 .contenedor {
   display: flex;

@@ -10,32 +10,32 @@ import { Storage } from '@ionic/storage-angular';
 export class IntroPage implements OnInit {
   slides = [
     {
-      title: 'Gatitos',
-      img: 'https://www.zooplus.es/magazine/wp-content/uploads/2021/06/Lombrices-en-gatitos.jpg',
+      title: 'Quevedo',
+      img: 'https://lh3.googleusercontent.com/_xtNRdAigNR0XtdJuEUCtsHyRYd2WladgU-k3YgR3x-B_CtGGl_828i9Vsu-blCKlYlVJ0b1ie8Jyp1Q=w544-h544-l90-rj',
       icon: 'beer-outline',
       description:
-        'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las',
+        'Pedro Luis Domínguez Quevedo Arilla, conocido artísticamente como Quevedo, es un cantante español de reguetón, trap y pop rap.',
     },
     {
-      title: 'Perritos',
-      img: 'assets/images/perritos.jpeg',
+      title: 'Feid',
+      img: 'https://th.bing.com/th/id/R.78d0bd3b53f9fa1901c83bf782253548?rik=DIdlrgtliT9lsg&pid=ImgRaw&r=0',
       icon: 'barbell-outline',
       description:
-        'Hola soy la explicacion del slide, Hola soy la explicacion del slide',
+        'Salomón Villada Hoyos​ conocido por su nombre artístico Feid, es un cantante, compositor y productor musical colombiano. Durante su trayectoria musical ha trabajado con varios artistas cómo Daddy Yankee, J Balvin, J Quiles, Manuel Turizo, Sebastián Yatra, Nacho, Maluma, Karol G, Yandel, entre otros.​​​​​Fuente: Wikipedia (https://es.wikipedia.org/wiki/Feid), bajo la licencia Creative Commons Attribution CC-BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/legalcode)',
     },
     {
-      title: 'Hamsters',
-      img: 'https://t1.ea.ltmcdn.com/es/posts/5/8/8/cuidados_y_alimentacion_del_hamster_7885_600.jpg',
+      title: 'Jhayco',
+      img: 'https://lh3.googleusercontent.com/_C2PL7KCnY2Mglqc8hunHnXaYWTgnLRirvl19g6mx708YBY8U5NGlCVKOu85Ou-bPfASLGt1ITGN9QnnsQ=w544-h544-l90-rj',
       icon: 'beer-outline',
       description:
-        'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto',
+        'Jesús Manuel Nieves Cortés ​ conocido artísticamente como Jhayco o Jhay Cortez, es un cantante, rapero, compositor y productor musical puertorriqueño.​ Fuente: Wikipedia (https://es.wikipedia.org/wiki/Jhayco), bajo la licencia Creative Commons Attribution CC-BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/legalcode)',
     },
     {
-      title: 'Gatitos',
-      img: 'https://www.zooplus.es/magazine/wp-content/uploads/2021/06/Lombrices-en-gatitos.jpg',
+      title: 'ODISEO',
+      img: 'https://lh3.googleusercontent.com/8zJN0uGKPiJFUuxOdRvRWAPikV6ApV8S4A9ZCB6jkJsMyWgKhWPPt7lrtSldZ1kRoeN4k4SpHX9xDtH2=w544-h544-l90-rj',
       icon: 'beer-outline',
       description:
-        'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las',
+        'Odisseo es una banda de rock mexicana de Ecatepec, Estado de México actualmente la banda está conformada por Juan Pablo López Voz, Daniel León Guitarra, Edgar Macin Bajo, Manuel Uribe Batería y Rodolfo Guerrero Teclados.Fuente: Wikipedia (https://es.wikipedia.org/wiki/Odisseo), bajo la licencia Creative Commons Attribution CC-BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/legalcode)',
     },
   ];
 

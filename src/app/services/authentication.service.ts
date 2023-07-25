@@ -24,4 +24,8 @@ export class AuthenticationService {
     userData.password = btoa(userData.password);
     return this.storage.set('user', userData);
   }
+
+  logoutUser() {
+    return this.storage.remove('user');
+  }
 }

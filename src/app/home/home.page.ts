@@ -74,6 +74,7 @@ export class HomePage {
 
   play() {
     this.currentSong = new Audio(this.song.preview_url);
+    console.log(this.currentSong);
     this.currentSong.play();
     this.currentSong.addEventListener('timeupdate', () => {
       this.newTime =
