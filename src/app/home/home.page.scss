@@ -7,6 +7,24 @@
   transform: translateY(-50%);
 }
 
+ion-avatar {
+  height: 100px;
+  width: 100px;
+}
+
+swiper-slide {
+  height: 150px;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-style {
+    --border-radius: 4px;
+}
+
 #container strong {
   font-size: 20px;
   line-height: 26px;
