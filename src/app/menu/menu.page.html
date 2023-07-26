@@ -13,17 +13,21 @@
     <ion-content>
       <ion-item (click)="goToHome()">
         <ion-icon name="home"></ion-icon>
-        Inicio
+        <p class="ion-margin-start">Inicio</p>
       </ion-item>
       <ion-item (click)="goToSettings()">
         <ion-icon name="settings"></ion-icon>
-        Configuración
+        <p class="ion-margin-start">Configuración</p>
+      </ion-item>
+      <ion-item (click)="goToIntro()">
+        <ion-icon name="arrow-undo"></ion-icon>
+        <p class="ion-margin-start">Intro</p>
       </ion-item>
     </ion-content>
     <ion-footer>
       <ion-item (click)="logout()">
         <ion-icon name="log-in-outline"></ion-icon>
-        Cerrar Sesión
+        <p class="ion-margin-start">Cerrar Sesión</p>
       </ion-item>
     </ion-footer>
   </ion-menu>
