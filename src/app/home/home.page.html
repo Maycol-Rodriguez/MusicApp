@@ -6,12 +6,11 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-
   <h1>Artistas</h1>
   <swiper-container
-  [initialSlide]="0"
-  [slidesPerView]="3"
-  *ngIf="artists?.length > 0"
+    [initialSlide]="0"
+    [slidesPerView]="3"
+    *ngIf="artists?.length > 0"
   >
     <swiper-slide *ngFor="let artist of artists">
       <ion-avatar (click)="showSongs(artist)">
@@ -23,9 +22,9 @@
 
   <h1>Albumes</h1>
   <swiper-container
-  [initialSlide]="0"
-  [slidesPerView]="3"
-  *ngIf="albums?.length > 0"
+    [initialSlide]="0"
+    [slidesPerView]="3"
+    *ngIf="albums?.length > 0"
   >
     <swiper-slide *ngFor="let album of albums">
       <ion-avatar class="album-style" (click)="showAlbumSongs(album)">
@@ -35,7 +34,166 @@
     </swiper-slide>
   </swiper-container>
 
+  <h1> Artistas Locales</h1>
+  <swiper-container [initialSlide]="0" [slidesPerView]="3">
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+          src="https://lh3.googleusercontent.com/XE2cp2mnVX1H1k8yX80VrnkYDJ4f53m2q9gflVkjdCeaOC75oAih0EEO5X4Xw_OGf1lRSg6rg1CfmA=w1920-h800-p-l90-rj"
+          alt
+        />
+        <span>Bad Bunny</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+          src="https://lh3.googleusercontent.com/PbXmq8wbQDuMg1Jlv0VLRhNBD7WlgT7OzAbwi_VR8VxeyD6qhydaKvLR3EM79VqgCwmIIc0kO4vt9Sg=w226-h226-l90-rj"
+          alt
+        />
+        <span>Gorillaz</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+          src="https://lh3.googleusercontent.com/IihOopbS0xeSgpYSlgCm57XyF3V-Q3OY9BfUmFiqtnwymkcHaWxOmPscCsXRdhmY56MstGmjam5rZQ=w1632-h680-p-l90-rj"
+          alt
+        />
+        <span>Twenty One Pilots</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+          src="https://lh3.googleusercontent.com/PAril_5wB_6SlkkoRPY46X2pCr3Wi3jbz1KlTetLt7HlNRpar-5QwGSTeAvKWFdbVvwCBMHLBhvBFqMY=w1920-h800-p-l90-rj"
+          alt
+        />
+        <span>Karol G</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+          src="https://lh3.googleusercontent.com/XE2cp2mnVX1H1k8yX80VrnkYDJ4f53m2q9gflVkjdCeaOC75oAih0EEO5X4Xw_OGf1lRSg6rg1CfmA=w1920-h800-p-l90-rj"
+          alt
+        />
+        <span>Bad Bunny</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+          src="https://lh3.googleusercontent.com/PbXmq8wbQDuMg1Jlv0VLRhNBD7WlgT7OzAbwi_VR8VxeyD6qhydaKvLR3EM79VqgCwmIIc0kO4vt9Sg=w226-h226-l90-rj"
+          alt
+        />
+        <span>Gorillaz</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+        src="https://lh3.googleusercontent.com/IihOopbS0xeSgpYSlgCm57XyF3V-Q3OY9BfUmFiqtnwymkcHaWxOmPscCsXRdhmY56MstGmjam5rZQ=w1632-h680-p-l90-rj"
+        alt
+        />
+        <span>Twenty One Pilots</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+        src="https://lh3.googleusercontent.com/PAril_5wB_6SlkkoRPY46X2pCr3Wi3jbz1KlTetLt7HlNRpar-5QwGSTeAvKWFdbVvwCBMHLBhvBFqMY=w1920-h800-p-l90-rj"
+          alt
+        />
+        <span>Karol G</span>
+      </ion-avatar>
+    </swiper-slide>
+  </swiper-container>
+  <swiper-container [initialSlide]="0" [slidesPerView]="3">
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+          src="https://lh3.googleusercontent.com/PAril_5wB_6SlkkoRPY46X2pCr3Wi3jbz1KlTetLt7HlNRpar-5QwGSTeAvKWFdbVvwCBMHLBhvBFqMY=w1920-h800-p-l90-rj"
+          alt
+        />
+        <span>Karol G</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+        src="https://lh3.googleusercontent.com/IihOopbS0xeSgpYSlgCm57XyF3V-Q3OY9BfUmFiqtnwymkcHaWxOmPscCsXRdhmY56MstGmjam5rZQ=w1632-h680-p-l90-rj"
+        alt
+        />
+        <span>Twenty One Pilots</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+        src="https://lh3.googleusercontent.com/tFwUtnpeXL4GhL8Y9QaEt8uj-VemZJk9eZl26SMQfSmIGXKmD1qSao5HumxM0pRZC7zCNTbvO9uvBc0=w1920-h800-p-l90-rj"
+        alt
+        />
+        <span>Shakira</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+        src="https://lh3.googleusercontent.com/XE2cp2mnVX1H1k8yX80VrnkYDJ4f53m2q9gflVkjdCeaOC75oAih0EEO5X4Xw_OGf1lRSg6rg1CfmA=w1920-h800-p-l90-rj"
+        alt
+        />
+        <span>Bad Bunny</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+          src="https://lh3.googleusercontent.com/PbXmq8wbQDuMg1Jlv0VLRhNBD7WlgT7OzAbwi_VR8VxeyD6qhydaKvLR3EM79VqgCwmIIc0kO4vt9Sg=w226-h226-l90-rj"
+          alt
+        />
+        <span>Gorillaz</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+          src="https://lh3.googleusercontent.com/PAril_5wB_6SlkkoRPY46X2pCr3Wi3jbz1KlTetLt7HlNRpar-5QwGSTeAvKWFdbVvwCBMHLBhvBFqMY=w1920-h800-p-l90-rj"
+          alt
+        />
+        <span>Karol G</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+          src="https://lh3.googleusercontent.com/XE2cp2mnVX1H1k8yX80VrnkYDJ4f53m2q9gflVkjdCeaOC75oAih0EEO5X4Xw_OGf1lRSg6rg1CfmA=w1920-h800-p-l90-rj"
+          alt
+        />
+        <span>Bad Bunny</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+          src="https://lh3.googleusercontent.com/PbXmq8wbQDuMg1Jlv0VLRhNBD7WlgT7OzAbwi_VR8VxeyD6qhydaKvLR3EM79VqgCwmIIc0kO4vt9Sg=w226-h226-l90-rj"
+          alt
+        />
+        <span>Gorillaz</span>
+      </ion-avatar>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-avatar class="album-style">
+        <img
+          src="https://lh3.googleusercontent.com/IihOopbS0xeSgpYSlgCm57XyF3V-Q3OY9BfUmFiqtnwymkcHaWxOmPscCsXRdhmY56MstGmjam5rZQ=w1632-h680-p-l90-rj"
+          alt
+        />
+        <span>Twenty One Pilots</span>
+      </ion-avatar>
+    </swiper-slide>
+  </swiper-container>
 </ion-content>
+
 <ion-footer>
   <ion-grid>
     <ion-row>
@@ -51,17 +209,23 @@
   <ion-grid>
     <ion-row>
       <ion-col size="1">
-      <ion-icon name="heart"></ion-icon>
-    </ion-col>
-    <ion-col size="10" class="ion-text-center">
-      <ion-text>{{
-        song?.name || "Sin cancion seleccionada"
-      }}</ion-text>
-    </ion-col>
-    <ion-col size="1">
-      <ion-icon name="play" (click)="play()" *ngIf="!song?.playing"></ion-icon>
-      <ion-icon name="pause" (click)="pause()" *ngIf="song?.playing"></ion-icon>
-    </ion-col>
+        <ion-icon name="heart"></ion-icon>
+      </ion-col>
+      <ion-col size="10" class="ion-text-center">
+        <ion-text>{{ song?.name || "Sin cancion seleccionada" }}</ion-text>
+      </ion-col>
+      <ion-col size="1">
+        <ion-icon
+          name="play"
+          (click)="play()"
+          *ngIf="!song?.playing"
+        ></ion-icon>
+        <ion-icon
+          name="pause"
+          (click)="pause()"
+          *ngIf="song?.playing"
+        ></ion-icon>
+      </ion-col>
     </ion-row>
   </ion-grid>
 </ion-footer>
