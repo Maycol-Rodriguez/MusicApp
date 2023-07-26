@@ -1,5 +1,5 @@
 ion-content {
-  --ion-background-color: rgb(46, 47, 51);
+  --ion-background-color: var(--ion-mi-color);
   --ion-color-step-550: #3d3d3d; // Esta variable se utiliza para las sombras de ion-item
 
   ion-item {
